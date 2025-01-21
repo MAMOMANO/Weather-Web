@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Weather App</title>
+    <link rel="stylesheet" href="dist/output.css" />
+  </head>
+  <body class="bg-gray-800">
+    <div
+      class="container bg-gray-700 rounded-lg ring-1 ring-purple-500 shadow-md p-6 max-w-sm mx-auto m-40 lg:w-full"
+    >
+      <h1 class="font-bold text-center py-5 px-5 m-5 text-2xl text-white uppercase">
+        Weather App
+      </h1>
+      <input
+        class="mb-4 p-2 w-full border hover:bg-slate-200 border-gray-300 rounded-lg focus:outline-none focus:ring-1 focus:ring-purple-800 text-gray-700 placeholder-gray-400"
+        type="text"
+        id="cityInput"
+        placeholder="Enter city name"
+      />
+      <div class="flex justify-end">
+        <button
+          id="searchButton"
+          class="bg-purple-600 w-20 h-10 hover:bg-purple-900 text-white items-center font-semibold p-2 m-2 rounded-lg"
+        >
+          Search
+        </button>
+      </div>
+      <div class="font-semibold text-center" id="weatherResult">
+        <!-- Weather data will appear here -->
+      </div>
+    </div>
+    <!-- Container for the rain effect -->
+    <div
+      id="rainContainer"
+      class="absolute top-0 left-0 w-full h-full pointer-events-none"
+    ></div>
+    <script src="app.js"></script>
+  </body>
+</html>

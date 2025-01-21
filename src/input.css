@@ -1,0 +1,30 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities; 
+
+/* CSS untuk animasi hujan */
+.raindrop {
+    position: absolute;
+    width: 2px;
+    height: 10px;
+    background-color: rgba(0, 0, 255, 0.7);
+    animation: fall linear infinite;
+}
+
+@keyframes fall {
+    0% {
+        top: -10px;
+    }
+    100% {
+        top: 100vh;
+    }
+}
+
+#rainContainer {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+}
